@@ -12,7 +12,6 @@ namespace ListaDeTarefasMVC.Models
 
         public string Data { get; set; }
 
-
         [Required(ErrorMessage = "Campo Obrigatório")]
         [DataType(DataType.Time)] 
         public string Horario { get; set; }

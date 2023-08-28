@@ -41,6 +41,7 @@ namespace ListaDeTarefasMVC.Controllers
         }
 
 
+
         [HttpGet]
         public IActionResult InserirTarefa(string getTarefa)
         {
@@ -51,6 +52,8 @@ namespace ListaDeTarefasMVC.Controllers
             return View(tarefa);
         }
        
+
+
         [HttpPost]
         public async Task<IActionResult> InserirTarefa(TarefaModel insertTarefa)
         {
@@ -76,6 +79,7 @@ namespace ListaDeTarefasMVC.Controllers
             return View(tarefa);
         }
 
+
         [HttpPost]
         public async Task<IActionResult> AlterarTarefa(TarefaModel tarefa)
         {
@@ -88,7 +92,6 @@ namespace ListaDeTarefasMVC.Controllers
             return View(tarefa);
         }
 
-
         
         [HttpPost]
         public async Task<JsonResult> RemoverTarefa(int id)
@@ -99,7 +102,5 @@ namespace ListaDeTarefasMVC.Controllers
             return Json(true);
         }
         
-        
-
     }
 }
